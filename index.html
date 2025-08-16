@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CS Toolkit – Director Appointment (Private Company)</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand">
+      <div class="logo">CS</div>
+      <div class="title">
+        <h1>CS Toolkit</h1>
+        <p>Director Appointment (Private Company) – Frontend Only</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Checklist</h2>
+      <p class="muted">Fill the details below and click “Generate All 5 Docs”. Files download instantly – no backend.</p>
+
+      <form id="directorForm" class="grid">
+        <div class="field">
+          <label>Company Name</label>
+          <input type="text" id="companyName" placeholder="ABC Private Limited" required />
+        </div>
+
+        <div class="field">
+          <label>Meeting Date</label>
+          <input type="text" id="meetingDate" placeholder="01-08-2025" required />
+        </div>
+
+        <div class="field">
+          <label>Meeting Time</label>
+          <input type="text" id="meetingTime" placeholder="11:00 AM" required />
+        </div>
+
+        <div class="field">
+          <label>Meeting Address</label>
+          <input type="text" id="meetingAddress" placeholder="Registered Office Address" required />
+        </div>
+
+        <div class="field">
+          <label>Appointee Name</label>
+          <input type="text" id="name" placeholder="Full Name" required />
+        </div>
+
+        <div class="field">
+          <label>DIN</label>
+          <input type="text" id="din" placeholder="01234567" required />
+        </div>
+
+        <div class="field">
+          <label>Appointment Effective Date</label>
+          <input type="text" id="appointmentDate" placeholder="01-08-2025" required />
+        </div>
+
+        <div class="field">
+          <label>Signing Director Name (Authorised)</label>
+          <input type="text" id="directorName" placeholder="Existing Director Name" required />
+        </div>
+
+        <div class="field">
+          <label>PAN</label>
+          <input type="text" id="pan" placeholder="ABCDE1234F" required />
+        </div>
+
+        <div class="field">
+          <label>Email</label>
+          <input type="email" id="email" placeholder="name@example.com" required />
+        </div>
+
+        <div class="field">
+          <label>Mobile</label>
+          <input type="text" id="mobile" placeholder="+91-90000-00000" required />
+        </div>
+
+        <div class="field">
+          <label>Father's Name</label>
+          <input type="text" id="fatherName" placeholder="Father's Full Name" required />
+        </div>
+
+        <div class="field">
+          <label>Residential Address</label>
+          <input type="text" id="residenceAddress" placeholder="Complete Residential Address" required />
+        </div>
+
+        <div class="field">
+          <label>Place (City)</label>
+          <input type="text" id="place" placeholder="City" required />
+        </div>
+
+        <div class="fullrow">
+          <h3>MBP-1: Disclosure of Interest (single row example)</h3>
+        </div>
+
+        <div class="field">
+          <label>Other Entity Name</label>
+          <input type="text" id="mbp1Company" placeholder="XYZ Pvt Ltd" />
+        </div>
+
+        <div class="field">
+          <label>Nature of Interest</label>
+          <input type="text" id="mbp1Nature" placeholder="Director/Partner/Member" />
+        </div>
+
+        <div class="field">
+          <label>Date of Interest</label>
+          <input type="text" id="mbp1Date" placeholder="01-01-2025" />
+        </div>
+
+        <div class="actions">
+          <button type="button" id="generateAll">Generate All 5 Docs</button>
+          <button type="reset" class="ghost">Reset</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Downloads</h2>
+      <div id="downloads" class="downloads">
+        <p class="muted">Your files will appear here after generation.</p>
+      </div>
+      <p class="tiny muted">Tip: The files are simple <strong>.rtf</strong> so they open nicely in Word/Google Docs.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Made for demo – all processing happens in your browser.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
