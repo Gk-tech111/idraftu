@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Director Appointment • Private Company</title>
+<link rel="stylesheet" href="../../css/styles.css"/>
+</head><body>
+<header class="site-header">
+  <a class="brand" href="../../"><img src="../../assets/logo.svg" alt="iDraftU"><span>iDraftU</span></a>
+  <nav class="nav"><a href="../">Private Company</a><a href="../annual/">Annual Filing</a></nav>
+</header>
+
+<main class="container">
+  <section class="card">
+    <h3>Company & Director Details</h3>
+    <div class="grid">
+      <label>Company Name<input id="companyName" placeholder="ABC Private Limited"></label>
+      <label>CIN<input id="cin" placeholder="U00000KA2025PTC000000"></label>
+      <label>Registered Address<textarea id="regAddress" rows="2" placeholder="Address, City, State, PIN"></textarea></label>
+      <label>Meeting Date<input id="meetingDate" placeholder="24 August 2025"></label>
+      <label>Meeting Time<input id="meetingTime" placeholder="11:00 AM"></label>
+      <label>Meeting Venue<textarea id="meetingVenue" rows="2" placeholder="Board Room / Address"></textarea></label>
+      <label>Director Name<input id="directorName" placeholder="Mr/Ms New Director"></label>
+      <label>DIN<input id="din" placeholder="01234567"></label>
+      <label>Director Address<textarea id="directorAddress" rows="2" placeholder="Director address"></textarea></label>
+    </div>
+  </section>
+
+  <section class="card">
+    <h3>Disclosures</h3>
+    <div class="grid">
+      <label>MBP-1 Interests (optional)<textarea id="mbp1" rows="4" placeholder="- Interest in ...
+- Director in ..."></textarea></label>
+    </div>
+  </section>
+
+  <section class="card">
+    <button id="generateAll">Generate All (5 RTF files)</button>
+    <div id="downloads" class="downloads"></div>
+    <p class="small">Frontend only. Verify and edit before filing.</p>
+  </section>
+</main>
+
+<footer class="site-footer"><small>© <span id="y"></span> iDraftU</small></footer>
+<script src="./app.js"></script>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body></html>
